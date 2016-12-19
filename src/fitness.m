@@ -1,0 +1,1 @@
+function len = fitness(D, p)N = 8;Length = 0;for i = 1 : N-1    len = len + D(p(i),p(i+1));end

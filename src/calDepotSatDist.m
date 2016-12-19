@@ -1,0 +1,1 @@
+%----Calculate distance between depot and satellites----function[DepotSatDist] = calDepotSatDist(coord_dep, coord_sat, sat_num)DepotSatDist = zeros(sat_num,1);for i = 1:sat_num    DepotSatDist(i) = sqrt((coord_dep(1) - coord_sat(i,1)).^2 + (coord_dep(2) - coord_sat(i, 2)).^2);end%fprintf("\nDepoSatDist = \n");%disp(DepotSatDist);end

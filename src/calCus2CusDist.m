@@ -1,0 +1,1 @@
+function[Cus2CusDist] = calCus2CusDist(coord_cus, custom_num)Cus2CusDist = zeros(custom_num, custom_num);for i = 1:custom_num    for j = 1:custom_num        Cus2CusDist(i,j) = sqrt((coord_cus(i,1) - coord_cus(j,1)).^2 + (coord_cus(i,2) - coord_cus(j,2)).^2);    endendend
