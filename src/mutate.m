@@ -1,0 +1,1 @@
+function a = mutate(a)L = length(a);r = randperm(L);[a(r(1)),a(r(2))]=exchange(a(r(1)),a(r(2)));end

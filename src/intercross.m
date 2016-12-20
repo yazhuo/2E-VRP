@@ -1,0 +1,1 @@
+function[A,B] = intercross(A,B)%确定交叉宽度L = length(A);p = unidrnd(L-1);W = unidrnd(L-p-1);%执行交叉操作for i=1:W    x=find(A==B(1,p+i-1));    y=find(B==A(1,p+i-1));    [A(1,p+i-1),B(1,p+i-1)]=exchange(A(1,p+i-1),B(1,p+i-1));    [A(1,x),B(1,y)]=exchange(A(1,x),B(1,y));   endend

@@ -1,0 +1,1 @@
+function[SatSatDist] = calSatSatDist(coord_sat, sat_num)    SatSatDist = zeros(sat_num, sat_num);for i = 1:sat_num    for j = 1:sat_num        SatSatDist(i,j) = sqrt((coord_sat(i,1) - coord_sat(j,1)).^2 + (coord_sat(i,2) - coord_sat(j,2)).^2);    endend        end
