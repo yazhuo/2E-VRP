@@ -1,1 +1,1 @@
-a = [1 2 3 4 5 6];fprintf('%d ',a);
+a = [1 2 3 4 5 6];b = [1 1 1 1 1 1];c = [9 8 7 6 5 4];fid = fopen('test1.txt','a');fprintf(fid,'%g ',c);fprintf(fid,'\n');fprintf(fid,'%g ',b);fprintf(fid,'\n');fclose(fid);
